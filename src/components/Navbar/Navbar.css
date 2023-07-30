@@ -1,0 +1,112 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 50px;
+  background-color: #333;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  width: 78px;
+}
+
+.navbar__item {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.navbar__search {
+  width: 700px;
+  height: 35px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: none;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar__search input {
+  width: 100%;
+  height: 100%;
+  padding: 3px 10px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  right: 0;
+}
+
+.navbar__search input::placeholder {
+  font-size: 14px;
+}
+
+.navbar__search button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  height: 100%;
+  padding: 10px 25px;
+  background-color: #7000ff;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar__select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 35px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.navbar__select select {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+  .navbar__search {
+    margin-bottom: 20px;
+  }
+  .navbar__list {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+}

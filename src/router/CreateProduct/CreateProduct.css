@@ -1,0 +1,64 @@
+/* .create__product {
+  padding: 50px 10%;
+}
+
+.create__product input,
+.create__product button,
+.create__product select {
+  width: 300px;
+  height: 38px;
+  display: block;
+  margin-bottom: 16px;
+  padding: 0 12px;
+} */
+
+.create__product {
+  padding: 50px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.create__product form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.create__product label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.create__product input,
+.create__product select,
+.create__product button {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  display: block;
+}
+
+.create__product button {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.create__product button:hover {
+  background-color: #45a049;
+}
+
+.create__product select {
+  width: 300px;
+  display: block;
+}
+
+.create__product option {
+  padding: 5px;
+}
